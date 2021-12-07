@@ -1,16 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 const CommonBtn = (props) => {
-  const {text,description} = props;
-  const pushAction = () => {
-    alert(description);
-  };
-
+  const {child,text,color} = props;
+  const onClickButton = () => alert(text);
   return (
     <div>
-      <button onClick={pushAction}>{text}</button>
+      <button onClick={onClickButton} className = {`text-base text-black-400 p-1 m-2 w-20 rounded-3xl text-center ${color}`}>
+        {child}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default CommonBtn
+export default CommonBtn;
