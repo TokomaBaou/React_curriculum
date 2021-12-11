@@ -9,7 +9,7 @@ const CommonBtn = (props) => {
         {child}
       </button>
     </div>
-  );
+  )
 };
 
 export default CommonBtn;
